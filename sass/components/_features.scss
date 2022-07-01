@@ -1,0 +1,35 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features__list {
+    display: flex;
+    gap: 30px;
+}
+
+.features__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--bg-color-light-grey);
+    border-radius: 4px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+
+    color: var(--text-color-black);
+    @include fonts(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+}
+
+.features__paragraph {
+    color: var(--text-color-grey);
+    @include fonts(400, 14px, 1.71, 0.03em);
+}

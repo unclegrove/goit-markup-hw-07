@@ -1,0 +1,57 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    margin-bottom: 50px;
+
+    color: var(--text-color-black);
+    @include fonts(700, 36px, 1.17, 0.03em);
+    text-align: center;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    fill: var(--social-color-grey);
+
+    transition-property: fill border-color;
+    @include animation;
+
+    &:hover,
+    &:focus {
+        border-color: var(--text-color-blue);
+        outline: none;
+    }
+}
+
+.clients__icon {
+    transition-property: fill;
+    @include aimation;
+
+    animation-name: rotateY;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--text-color-blue);
+        animation-play-state: paused;
+    }
+}
