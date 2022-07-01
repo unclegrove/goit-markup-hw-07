@@ -836,6 +836,15 @@ img {
   fill: var(--text-color-blue);
 }
 
+/* 
+  .modal__icon {
+
+  .modal__input:hover + & {
+    fill: var(--text-color-blue);
+  }
+}
+*/
+
 .modal__comment {
   width: 100%;
   height: 120px;
