@@ -27,7 +27,7 @@
         <a class="website-logo header__website-logo">Web<span class="website-logo--black">Studio</span></a>
 
 <!-- Header Navigation -->
-
+        
         <nav class="header-nav">
             <ul class="header-nav__list">
                 <li class="header-nav__item">
@@ -64,6 +64,15 @@
                 </li>
             </ul>
         </div>
+
+<!-- Mobile Button -->
+
+        <button class="mobile-btn is-open" type="button" aria-expanded="false" aria-controls="mobile-id"  data-menu-button>
+            <svg class="mobile-btn__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
+                <use class="icon-open" href="./images/icon.svg#icon-open-menu"></use>
+                <use class="icon-close" href="./images/icon.svg#icon-close-menu"></use>
+            </svg>
+        </button>
         </div>
     </header>
 
@@ -89,7 +98,7 @@
                         <h3 class="features__title">Внимание к деталям</h3>
                         <p class="features__paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="features__item">
                         <div class="features__container">
                             <svg width="70" height="70">
                                 <use href="./images/icon.svg#icon-clock"></use>
@@ -98,7 +107,7 @@
                         <h3 class="features__title">Пунктуальность</h3>
                         <p class="features__paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="features__item">
                         <div class="features__container">
                             <svg width="70" height="70">
                                 <use href="./images/icon.svg#icon-diagram"></use>
@@ -107,7 +116,7 @@
                         <h3 class="features__title">Планирование</h3>
                         <p class="features__paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="features__item">
                         <div class="features__container">
                             <svg width="70" height="70">
                                 <use href="./images/icon.svg#icon-astronaut"></use>
@@ -117,20 +126,7 @@
                         <p class="features__paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
     </section>
 
 <!-- Job Section -->
@@ -366,12 +362,12 @@
 
 <!---------- Footer ---------->
 
-<footer class="footer">
-    <div class="container footer-container">
+<!-- <footer class="footer">
+    <div class="container footer-container"> -->
 
 <!-- Footer Address -->
 
-    <div class="adress-container">
+    <!-- <div class="adress-container">
     <a class="website-logo footer__website-logo">Web<span class="website-logo--white">Studio</span></a>
     <address class="addres">
         <ul class="addres__list">
@@ -386,11 +382,11 @@
             </li>
         </ul>
     </address>
-    </div>
+    </div> -->
 
 <!-- Footer Join -->
 
-    <div class="join">
+    <!-- <div class="join">
         <h2 class="join__title">присоединяйтесь</h2>
         <ul class="join__list">
             <li class="join__item">
@@ -422,10 +418,10 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 <!-- Footer Subscription -->
 
-        <form class="subscription">
+        <!-- <form class="subscription">
             <label class="subscription__label" for="email-distribution">
                 <span class="subscription__text">Подпишитесь на рассылку</span>
                 <input class="subscription__input" type="email" name="distribution" placeholder="E-mail" id="email-distribution">
@@ -436,13 +432,13 @@
                     <use href="./images/icon.svg#icon-button-send"></use>
                 </svg>
             </button>
-        </form>
+        </form> -->
     </div>
 </footer>
 
 <!---------- Modal Window ---------->
 
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <form class="modal__form">
             <p class="modal__paragraph">Оставьте свои данные, мы вам перезвоним</p>
@@ -497,10 +493,53 @@
     </div>
 
 
+</div> -->
+
+<!---------- Mobile Menu ---------->
+
+<div class="mobile" id="mobile-id" data-menu>
+    <nav class="mobile__nav">
+        <ul class="mobile__list">
+            <li class="mobile__item">
+                <a class="mobile__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile__item">
+                <a class="mobile__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile__item">
+                <a class="mobile__link" href="">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mobile__adress">
+        <ul class="mobile__adress-list">
+            <li class="mobile__adress-item">
+                <a class="mobile__adress-link" href="">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile__adress-item">
+                <a class="mobile__adress-link" href="">info@devstudio.com</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="mobile__socials">
+        <li class="mobile__socials-list">
+            <a class="mobile__socials-link" href="">Instagram</a>
+        </li>
+        <li class="mobile__socials-list">
+            <a class="mobile__socials-link" href="">Twitter</a>
+        </li>
+        <li class="mobile__socials-list">
+            <a class="mobile__socials-link" href="">Facebook</a>
+        </li>
+        <li class="mobile__socials-list">
+            <a class="mobile__socials-link" href="">LinkedIn</a>
+        </li>
+    </ul>
 </div>
 
 <!---------- Modal Script ---------->
 
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 
 </body>

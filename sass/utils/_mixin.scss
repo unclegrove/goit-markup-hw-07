@@ -4,7 +4,7 @@
     transition-delay: 0s;
 }
 
-@mixin fonts($fw, $fs, $lh, $ls) {
+@mixin fonts($fw, $fs, $lh, $lt) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
